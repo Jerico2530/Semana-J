@@ -18,16 +18,13 @@ public class DatabaseLoader implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		// Crear categorías
-        Categoria categoria1 = new Categoria("Instrumentos de Viento");
+        Categoria categoria1 = new Categoria("Instrumentos ");
 
-        // Guardar las categorías en la base de datos
         categoriaRepository.save(categoria1);
 
-        // Crear instrumentos y asignarles una categoría
-        Instrumento instrumento1 = new Instrumento("Flauta", categoria1);
+        Instrumento instrumento1 = new Instrumento("Guitarra", categoria1);
 
-        // Guardar los instrumentos en la base de datos
+        
         instrumentoRepository.save(instrumento1);
 	}
 }

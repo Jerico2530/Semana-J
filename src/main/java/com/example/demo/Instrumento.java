@@ -13,6 +13,7 @@ public class Instrumento {
 
 	private @Id @GeneratedValue Long id; 
 	private String nombre;
+     
 	@ManyToOne
     @JoinColumn(name="id_categoria")
     private Categoria categoria;
