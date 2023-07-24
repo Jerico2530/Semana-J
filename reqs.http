@@ -1,6 +1,7 @@
 @server = https://jerico2530-expert-pancake-r95wjpvvj963wxwq-8080.preview.app.github.dev
 @api = {{server}}/api/ec3
 
+###en el form, en el campo de la URL de render esribe: "REVISAR EN CODESPACES"
 ################ Categorias: ################
 ###
 GET {{api}}/categorias
