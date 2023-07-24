@@ -1,0 +1,24 @@
+@server = https://jerico2530-expert-pancake-r95wjpvvj963wxwq-8080.preview.app.github.dev
+@api = {{server}}/api/ec3
+
+################ Categorias: ################
+###
+GET {{api}}/categorias
+###
+POST {{api}}/categorias
+Content-Type: application/json
+
+{"nombre": "Instrumentos Guitarra"}
+################ Instrumentos: ################
+#NOTA: Cambie /instrumentos a /instrumentoes
+###
+GET {{api}}/instrumentoes
+###
+POST {{api}}/instrumentoes
+Content-Type: application/json
+
+{"nombre": "Guitarra", "categoria": "http://localhost/api/ec3/categorias/2"}
+###
+GET {{api}}/instrumentoes/2/categoria
+###
+GET {{api}}/instrumentoes?sort=nombre,desc
